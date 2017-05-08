@@ -52,6 +52,7 @@ function Access(){
       var output = "";
       if(msg.text === "Bot Improvements")
       {
+        console.log("hello");
         output += "Bot Improvements: \n";
         for(var x = 0; x<counterBotImprov;x++)
         {
