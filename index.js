@@ -15,6 +15,7 @@ var botImprov = [];
 var genFeedback = [];
 var counterBotImprov = 0;
 var counterGenFeedback = 0;
+var stage = 0;
 
 bot.on('message', function(msg, match)
 {
@@ -22,11 +23,30 @@ bot.on('message', function(msg, match)
 })
 
 bot.onText(/^\/start/i, function(msg,match){
-  bot.sendMessage(msg.chat.id, "Hello there " + msg.from.first_name+ "! Welcome to the BOT of Noctua!\n\nWhat can I help you with?");
-  Access();
-  Help();
-  Feedback();
+  if (stage===0){
+    stage++;
+    const menu = {
+      reply_markup: {
+        keyboard: [
+          ['Feedback'],
+          ['Order Food']
+        ],
+        one_time_keyboard: true,
+        selective: true,
+      }
+    }
+    bot.sendMessage(msg.chat.id, "Hello there " + msg.from.first_name+ "! Welcome to the BOT of Noctua!\n\nWhat can I help you with?", menu);
+    //OrderFood();
+    Access();
+    Help();
+    Feedback();
+  }
 });
+
+//Bookmarked
+/*function OrderFood(){
+  bot.onText(/^\/orderfood/i, function(msg, match) {}
+}*/
 
 function Access(){
   bot.onText(/^\/access/i, function(msg, match)
@@ -81,20 +101,26 @@ function Access(){
           output += y+ ": " + genFeedback[x]+"\n";
         }
       }
-      bot.sendMessage(replyChatId, output);
+      const remove = {
+        reply_markup: {
+          remove_keyboard: true,
+          selective: true
+        }
+      }
+      bot.sendMessage(replyChatId, output, remove);
     })
   });
 }
 
 function Help(){
   bot.onText(/^\/help/i, function(msg, match) {
-  var replyChatId = msg.chat.id;
-  bot.sendMessage(replyChatId, "/feedback - To give feedback to us");
-});
+    var replyChatId = msg.chat.id;
+    bot.sendMessage(replyChatId, "/feedback - To give feedback to us");
+  });
 }
 
 function Feedback(){
-  bot.onText(/^\/feedback/i, function(msg, match){
+  bot.onText(/Feedback/i, function(msg, match){
     const options = {
       reply_to_message_id: msg.message_id,
       reply_markup: {
@@ -132,10 +158,10 @@ function Feedback(){
         }
       }
       const remove = {
-          reply_markup: {
-            remove_keyboard: true,
-            selective: true
-          }
+        reply_markup: {
+          remove_keyboard: true,
+          selective: true
+        }
       }
       if(msg.text === "Bot Improvements")
       {
