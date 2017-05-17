@@ -33,6 +33,19 @@ Possible functions: /orderFood, /attendance, /aboutBot, /randominsult
 
 *back to main interface*
 
+## /blast
+Summary:
+	- Admin user can PM /blast to BOT
+	- BOT will reply "What type of Blast Message will this be?"
+	- List down options: 'For Acknowledgement Only' and 'Response required'
+	- Admin user chooses one of those options
+	- BOT will reply "Please enter the message you wish to blast."
+	- Admin user will key in message and send
+	- BOT will reply specifically: 
+		[For acknowledgement only]:
+		[Response required] :
+		
+
 ## /orderFood Function
 The main idea are summarised as follows:
 
