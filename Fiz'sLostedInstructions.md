@@ -35,15 +35,18 @@ Possible functions: /orderFood, /attendance, /aboutBot, /randominsult
 
 ## /blast
 Summary:
+
 	- Admin user can PM /blast to BOT
-	- BOT will reply "What type of Blast Message will this be?"
-	- List down options: 'For Acknowledgement Only' and 'Response required'
+	- BOT will reply: "For this function to work effectively, ensure that each individual has the BOT running. ie typed /start"
+	- Custom keyboard: "Yes, they are all running the BOT."
+	- BOT will reply "Okay, what type of Blast Message will this be?"
+	- Custom keyboard: 'For Acknowledgement Only' and 'Response required'
 	- Admin user chooses one of those options
 	- BOT will reply "Please enter the message you wish to blast."
 	- Admin user will key in message and send
 	- BOT will reply specifically: 
-		[For acknowledgement only]:
-		[Response required] :
+		[For acknowledgement only]: Your message has been blasted. I will continue to blast the message every 1 hour until it has been acknowledged.
+		[Response required] : Coming soon
 		
 
 ## /orderFood Function
