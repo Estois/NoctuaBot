@@ -12,13 +12,13 @@ Possible functions: /orderFood, /attendance, /aboutBot, /randominsult
 	- BOT: Found a bug? Are we missing essential features? Have a suggestion for improvement? Let us know here!
 	- Input: General Feedback
 	- BOT: Feel free to tell us anything you want us to know! 
-				(2-linebreak) All responses will be kept private and confidential!
+		(2-linebreak) All responses will be kept private and confidential!
 	- Input: *User types in feedback*
 	- BOT: Feedback received! Would you like to submit another?
-				(2-linebreak) When you're done, simply type /done to submit all your responses.
+		(2-linebreak) When you're done, simply type /done to submit all your responses.
 	- Input: /done
 	- Output: Thank you for your feedback! 
-				(2-linebreak) If your feedback requires a response, we’ll get back to you soon!
+		(2-linebreak) If your feedback requires a response, we’ll get back to you soon!
 	*back to main interface*
 
 ## /blast
