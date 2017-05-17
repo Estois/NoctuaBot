@@ -1,42 +1,30 @@
 # Noctua_Bot
-Main functions: /feedback
+Main functions: /feedback, /blast
 
 Possible functions: /orderFood, /attendance, /aboutBot, /randominsult
 
 ## /feedback Function 
-### Step 1:
 
-	- Input: 	/feedback
-	- Output: 	Is there anything particular you would like to feedback about? 
-	- Keyboard:	'BOT Improvements' and 'General Feedback'
-	
-### Step 2:
-
-	- Input: 	BOT Improvements
-	- Output: 	Found a bug? Are we missing essential features? Have a suggestion for improvement? Let us know here!
-	
-	- Input: 	General Feedback
-	- Output: 	Feel free to tell us anything you want us to know! 
+	- Input: /feedback
+	- BOT: Is there anything particular you would like to feedback about? 
+	- Keyboard: 'BOT Improvements' and 'General Feedback'
+	- Input: BOT Improvements
+	- BOT: Found a bug? Are we missing essential features? Have a suggestion for improvement? Let us know here!
+	- Input: General Feedback
+	- BOT: Feel free to tell us anything you want us to know! 
 				(2-linebreak) All responses will be kept private and confidential!
-	
-### Step 3:
-
-	- Input: 	*User types in feedback*
-	- Output: 	Feedback received! Would you like to submit another?
+	- Input: *User types in feedback*
+	- BOT: Feedback received! Would you like to submit another?
 				(2-linebreak) When you're done, simply type /done to submit all your responses.
-
-### Step 4: 
-
-	- Input:	/done
-	- Output: 	Thank you for your feedback! 
+	- Input: /done
+	- Output: Thank you for your feedback! 
 				(2-linebreak) If your feedback requires a response, we’ll get back to you soon!
-
-*back to main interface*
+	*back to main interface*
 
 ## /blast
 Summary:
 
-	- Admin user can PM /blast to BOT
+	- Input: /blast
 	- BOT: "For this function to work effectively, ensure that each individual has the BOT running. ie typed /start"
 	- Custom keyboard: "Yes, they are all running the BOT."
 	- BOT: "Okay, what type of Blast Message will this be?"
