@@ -34,8 +34,12 @@ Summary:
 	- Admin user will key in message and send
 	- BOT will reply specifically: 
 		[For acknowledgement only]: Your message has been blasted. I will continue to blast the message every 1 hour until it has been acknowledged.
-		[Response required] : Coming soon
+		[Response required] : Coming soon (but the idea is that the admin user can ask for specific responses from recipients, aka Option A, Option B, etc)
 		
+	- Recipient POV - receives blast message
+	- [For acknowledgement only]-type message: Custom keyboard: "I've read and acknowledged this! Thanks BOT!"
+	- [Response required]-type message: Custom keyboard: "Option A", "Option B" etc
+		- Recipient chooses, then BOT: "Thank you for your response!"
 
 ## /orderFood Function
 The main idea are summarised as follows:
